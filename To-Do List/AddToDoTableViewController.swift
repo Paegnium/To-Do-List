@@ -12,6 +12,7 @@ class AddToDoTableViewController: UITableViewController {
     
     var toDo: ToDo!
     
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     @IBOutlet weak var titleField: UITextField!
     @IBOutlet weak var descriptionField: UITextField!
     @IBOutlet weak var categoryField: UITextField!
@@ -24,6 +25,15 @@ class AddToDoTableViewController: UITableViewController {
             descriptionField.text = toDo.description
             categoryField.text = toDo.category
             dateField.text = toDo.date
+            saveButton.isEnabled = false
+            titleField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+            descriptionField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+            categoryField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+        } else {
+            saveButton.isEnabled = false
+            titleField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+            descriptionField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
+            categoryField.addTarget(self, action: #selector(editingChanged), for: .editingChanged)
         }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -42,6 +52,23 @@ class AddToDoTableViewController: UITableViewController {
         } else {
             return 45
     }
+    }
+    @objc func editingChanged(_ textField: UITextField) {
+        if textField.text?.characters.count == 1 {
+            if textField.text?.characters.first == " " {
+                textField.text = ""
+                return
+            }
+        }
+        guard
+            let title = titleField.text, !title.isEmpty,
+            let description = descriptionField.text, !description.isEmpty,
+            let category = categoryField.text, !category.isEmpty
+            else {
+                saveButton.isEnabled = false
+                return
+        }
+        saveButton.isEnabled = true
     }
     // MARK: - Table view data source
 
@@ -111,5 +138,16 @@ class AddToDoTableViewController: UITableViewController {
         }
     }
     
-
+    @IBAction func returnPressed(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    @IBAction func returnPressedCat(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    @IBAction func returnPressedDesc(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
 }
