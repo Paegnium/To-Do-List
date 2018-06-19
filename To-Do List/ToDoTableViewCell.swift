@@ -16,7 +16,7 @@ class ToDoTableViewCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBAction func checkboxTicked(_ sender: Any) {
-
+        checkmark.isSelected = !checkmark.isSelected
     }
     override func awakeFromNib() {
         super.awakeFromNib()
