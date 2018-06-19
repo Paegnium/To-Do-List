@@ -19,7 +19,12 @@ class AddToDoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if toDo != nil {
+            titleField.text = toDo.title
+            descriptionField.text = toDo.description
+            categoryField.text = toDo.category
+            dateField.text = toDo.date
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -96,7 +101,13 @@ class AddToDoTableViewController: UITableViewController {
             let date = dateField.text ?? ""
             let category = categoryField.text ?? ""
             let description = descriptionField.text ?? ""
-            toDo = ToDo(title: title, date: date, category: category, description: description)
+            if (toDo == nil){ toDo = ToDo(title: title, date: date, category: category, description: description)
+            } else {
+                toDo.title = title
+                toDo.description = description
+                toDo.date = date
+                toDo.category = category
+            }
         }
     }
     

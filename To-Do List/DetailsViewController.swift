@@ -30,6 +30,14 @@ class DetailsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "editToDo" {
+            let nav = segue.destination as! UINavigationController
+            let dest = nav.viewControllers[0] as! AddToDoTableViewController
+            dest.toDo = toDo
+        }
+    }
 
 
 }

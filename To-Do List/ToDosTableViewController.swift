@@ -111,8 +111,10 @@ class ToDosTableViewController: UITableViewController {
     
     @IBAction func backToToDoList (with segue: UIStoryboardSegue) {
         if segue.identifier == "saveUnwind" {
+            if tableView.indexPathForSelectedRow == nil {
             let source = segue.source as! AddToDoTableViewController
             toDos.insert(source.toDo, at: 0)
+        }
             tableView.reloadData()
         }
     }

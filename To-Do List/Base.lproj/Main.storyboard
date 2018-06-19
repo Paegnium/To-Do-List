@@ -237,7 +237,7 @@
             </objects>
             <point key="canvasLocation" x="304.80000000000001" y="842.42878560719646"/>
         </scene>
-        <!--Details View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="DetailsViewController" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -263,8 +263,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmk-gx-GNj">
-                                <rect key="frame" x="272" y="165" width="87" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmk-gx-GNj">
+                                <rect key="frame" x="246" y="165" width="113" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -282,7 +282,7 @@
                             <constraint firstItem="KfA-WO-Gs0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4kZ-tw-bNE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmk-gx-GNj" secondAttribute="trailing" constant="16" id="5fD-XY-z2y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KfA-WO-Gs0" secondAttribute="trailing" constant="108" id="L9u-5i-hWB"/>
-                            <constraint firstItem="Mmk-gx-GNj" firstAttribute="leading" secondItem="BLz-pH-tlT" secondAttribute="trailing" constant="152" id="WHH-8v-tjf"/>
+                            <constraint firstItem="Mmk-gx-GNj" firstAttribute="leading" secondItem="BLz-pH-tlT" secondAttribute="trailing" constant="126" id="WHH-8v-tjf"/>
                             <constraint firstItem="BLz-pH-tlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WNI-Wx-g3I"/>
                             <constraint firstItem="KfA-WO-Gs0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="YNJ-Jp-1oR"/>
                             <constraint firstItem="Mmk-gx-GNj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="fIb-hg-ZpY"/>
@@ -293,6 +293,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="rIP-de-dHZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="10d-gn-BlG">
+                            <connections>
+                                <segue destination="xzq-CV-GUn" kind="show" identifier="editToDo" id="2o0-R6-CVh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="categoryLabel" destination="Mmk-gx-GNj" id="QV0-Du-aEY"/>
                         <outlet property="descriptionLabel" destination="95w-Zc-Nhg" id="7C6-2V-Sum"/>
@@ -345,4 +352,7 @@
         <image name="checked-checkbox" width="35" height="35"/>
         <image name="unchecked-checkbox" width="35" height="35"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Jil-2l-wYs"/>
+    </inferredMetricsTieBreakers>
 </document>
