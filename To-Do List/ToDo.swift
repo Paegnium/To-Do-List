@@ -10,14 +10,20 @@ import Foundation
 
 class ToDo {
     var title: String
-    var date: String
+    var date: Date
     var category: String
     var description: String
     
-    init(title: String, date: String, category: String, description: String) {
+    init(title: String, date: Date, category: String, description: String) {
         self.title = title
         self.date = date
         self.category = category
         self.description = description
     }
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter
+    }()
 }

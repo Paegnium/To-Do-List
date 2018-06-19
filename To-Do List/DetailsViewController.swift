@@ -20,7 +20,7 @@ class DetailsViewController: UIViewController {
         super.viewDidLoad()
         descriptionLabel.numberOfLines = 0
         detailsTitle.text = toDo.title
-        detailsDate.text = toDo.date
+        detailsDate.text = "\(toDo.date)"
         categoryLabel.text = toDo.category
         descriptionLabel.text = toDo.description
         // Do any additional setup after loading the view, typically from a nib.

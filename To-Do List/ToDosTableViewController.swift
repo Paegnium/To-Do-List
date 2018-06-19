@@ -10,7 +10,7 @@ import UIKit
 
 class ToDosTableViewController: UITableViewController {
 
-    var toDos = [ToDo(title: "Get milk", date: "19.06.18", category: "Shopping", description: "Buy Magnolia fresh milk from Fairprice Express")]
+    var toDos : [ToDo] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +45,7 @@ class ToDosTableViewController: UITableViewController {
         
         let selectedToDo = toDos[indexPath.row]
         cell.titleLabel.text = selectedToDo.title
-        cell.dateLabel.text = selectedToDo.date
+        cell.dateLabel.text = "\(selectedToDo.date)"
         cell.categoryLabel.text = selectedToDo.category
         return cell
     }
