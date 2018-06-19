@@ -10,6 +10,9 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    @IBOutlet weak var detailsTitle: UILabel!
+    @IBOutlet weak var detailsDate: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
