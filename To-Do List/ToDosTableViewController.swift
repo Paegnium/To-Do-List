@@ -10,7 +10,7 @@ import UIKit
 
 class ToDosTableViewController: UITableViewController {
 
-    var toDos = [ToDo(title: "Get milk", date: "19.06.18", category: "Shopping", description: "Buy Magnolia fresh milk from Fairprice Express")]
+    var toDos = [ToDo(title: "Get milk", date: "19.06.18", category: "Shopping", description: "Buy Magnolia fresh milk from Fairprice Express", finishChecker: false)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +47,7 @@ class ToDosTableViewController: UITableViewController {
         cell.titleLabel.text = selectedToDo.title
         cell.dateLabel.text = selectedToDo.date
         cell.categoryLabel.text = selectedToDo.category
+        cell.checkmark.isSelected = selectedToDo.finishChecker
         return cell
     }
     
