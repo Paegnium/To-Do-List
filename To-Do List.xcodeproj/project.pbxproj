@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650B18B620D9357B00741DD9 /* AddToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B18B520D9357B00741DD9 /* AddToDoTableViewController.swift */; };
 		65DC554F20D8F07B005A6DD4 /* ToDosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC554E20D8F07B005A6DD4 /* ToDosTableViewController.swift */; };
 		65DC555120D8F0A0005A6DD4 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC555020D8F0A0005A6DD4 /* ToDo.swift */; };
 		65DC555320D8F413005A6DD4 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC555220D8F413005A6DD4 /* ToDoTableViewCell.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650B18B520D9357B00741DD9 /* AddToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoTableViewController.swift; sourceTree = "<group>"; };
 		65DC554E20D8F07B005A6DD4 /* ToDosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosTableViewController.swift; sourceTree = "<group>"; };
 		65DC555020D8F0A0005A6DD4 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		65DC555220D8F413005A6DD4 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				7DE9F94220D8EBDD00564CF0 /* AppDelegate.swift */,
 				7DE9F94420D8EBDD00564CF0 /* DetailsViewController.swift */,
 				7DE9F94620D8EBDD00564CF0 /* Main.storyboard */,
+				650B18B520D9357B00741DD9 /* AddToDoTableViewController.swift */,
 				65DC555220D8F413005A6DD4 /* ToDoTableViewCell.swift */,
 				65DC555020D8F0A0005A6DD4 /* ToDo.swift */,
 				65DC554E20D8F07B005A6DD4 /* ToDosTableViewController.swift */,
@@ -148,6 +151,7 @@
 				65DC554F20D8F07B005A6DD4 /* ToDosTableViewController.swift in Sources */,
 				7DE9F94320D8EBDD00564CF0 /* AppDelegate.swift in Sources */,
 				65DC555120D8F0A0005A6DD4 /* ToDo.swift in Sources */,
+				650B18B620D9357B00741DD9 /* AddToDoTableViewController.swift in Sources */,
 				65DC555320D8F413005A6DD4 /* ToDoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

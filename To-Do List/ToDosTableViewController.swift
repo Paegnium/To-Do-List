@@ -10,7 +10,7 @@ import UIKit
 
 class ToDosTableViewController: UITableViewController {
 
-    var toDos = [ToDo(title: "Get milk", date: "19.06.18", category: "Shopping", description: "Buy Magnolia fresh milk from Fairprice Express", isCompleted: false)]
+    var toDos = [ToDo(title: "Get milk", date: "19.06.18", category: "Shopping", description: "Buy Magnolia fresh milk from Fairprice Express")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,6 +106,14 @@ class ToDosTableViewController: UITableViewController {
                 dest.toDo = selectedToDo
             }
 
+        }
+    }
+    
+    @IBAction func backToToDoList (with segue: UIStoryboardSegue) {
+        if segue.identifier == "saveUnwind" {
+            let source = segue.source as! AddToDoTableViewController
+            toDos.insert(source.toDo, at: 0)
+            tableView.reloadData()
         }
     }
     

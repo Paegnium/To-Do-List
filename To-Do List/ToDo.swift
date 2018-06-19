@@ -13,13 +13,11 @@ class ToDo {
     var date: String
     var category: String
     var description: String
-    var isCompleted: Bool
     
-    init(title: String, date: String, category: String, description: String, isCompleted: Bool) {
+    init(title: String, date: String, category: String, description: String) {
         self.title = title
         self.date = date
         self.category = category
         self.description = description
-        self.isCompleted = isCompleted
     }
 }
