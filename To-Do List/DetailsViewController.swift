@@ -9,12 +9,20 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
+    
+    var toDo: ToDo!
 
     @IBOutlet weak var detailsTitle: UILabel!
     @IBOutlet weak var detailsDate: UILabel!
-    
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        descriptionLabel.numberOfLines = 0
+        detailsTitle.text = toDo.title
+        detailsDate.text = toDo.date
+        categoryLabel.text = toDo.category
+        descriptionLabel.text = toDo.description
         // Do any additional setup after loading the view, typically from a nib.
     }
 

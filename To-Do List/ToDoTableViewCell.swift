@@ -10,8 +10,14 @@ import UIKit
 
 class ToDoTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var checkmark: UIButton!
+    @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBAction func checkboxTicked(_ sender: Any) {
+
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

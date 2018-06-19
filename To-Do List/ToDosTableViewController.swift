@@ -9,18 +9,18 @@
 import UIKit
 
 class ToDosTableViewController: UITableViewController {
-    
-    var toDos = [ToDo(title: "Get milk", date: "19.06.18")]
+
+    var toDos = [ToDo(title: "Get milk", date: "19.06.18", category: "Shopping", description: "Buy Magnolia fresh milk from Fairprice Express", isCompleted: false)]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        /*
+        self.navigationItem.leftBarButtonItem = self.editButtonItem
+        */
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -46,6 +46,7 @@ class ToDosTableViewController: UITableViewController {
         let selectedToDo = toDos[indexPath.row]
         cell.titleLabel.text = selectedToDo.title
         cell.dateLabel.text = selectedToDo.date
+        cell.categoryLabel.text = selectedToDo.category
         return cell
     }
     
@@ -65,7 +66,7 @@ class ToDosTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            toDos.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -92,13 +93,19 @@ class ToDosTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetails", sender: nil)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails" {
             let dest = segue.destination as! DetailsViewController
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let selectedToDo = toDos[indexPath.row]
+                dest.toDo = selectedToDo
+            }
 
         }
     }
- 
+    
 
 }
