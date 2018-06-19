@@ -41,8 +41,11 @@ class ToDosTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell", for: indexPath) as! ToDoTableViewCell
+        
+        let selectedToDo = toDos[indexPath.row]
+        cell.titleLabel.text = selectedToDo.title
+        cell.dateLabel.text = selectedToDo.date
         return cell
     }
     
