@@ -160,12 +160,14 @@ class AddToDoTableViewController: UITableViewController {
             let date = datePickerView.date
             let category = categoryField.text ?? ""
             let description = descriptionField.text ?? ""
-            if (toDo == nil){ toDo = ToDo(title: title, date: date, category: category, description: description)
+            let finishChecker = false
+            if (toDo == nil){ toDo = ToDo(title: title, date: date, category: category, description: description, finishChecker: finishChecker)
             } else {
                 toDo.title = title
                 toDo.description = description
                 toDo.date = date
                 toDo.category = category
+                toDo.finishChecker = false
             }
         }
     }

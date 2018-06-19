@@ -47,6 +47,7 @@ class ToDosTableViewController: UITableViewController {
         cell.titleLabel.text = selectedToDo.title
         cell.dateLabel.text = "\(selectedToDo.date)"
         cell.categoryLabel.text = selectedToDo.category
+        cell.checkmark.isSelected = selectedToDo.finishChecker
         return cell
     }
     
