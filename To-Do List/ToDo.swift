@@ -15,7 +15,7 @@ class ToDo {
     var description: String
     var finishChecker: Bool
     
-    init(title: String, date: Date, category: String, description: String) {
+    init(title: String, date: Date, category: String, description: String, finishChecker: Bool) {
         self.title = title
         self.date = date
         self.category = category
