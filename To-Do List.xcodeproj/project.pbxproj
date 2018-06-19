@@ -12,6 +12,7 @@
 		7DE9F94820D8EBDD00564CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE9F94620D8EBDD00564CF0 /* Main.storyboard */; };
 		7DE9F94A20D8EBDF00564CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE9F94920D8EBDF00564CF0 /* Assets.xcassets */; };
 		7DE9F94D20D8EBDF00564CF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE9F94B20D8EBDF00564CF0 /* LaunchScreen.storyboard */; };
+		7DE9F95520D8F06B00564CF0 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9F95420D8F06B00564CF0 /* ListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7DE9F94920D8EBDF00564CF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DE9F94C20D8EBDF00564CF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DE9F94E20D8EBDF00564CF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE9F95420D8F06B00564CF0 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				7DE9F94220D8EBDD00564CF0 /* AppDelegate.swift */,
 				7DE9F94420D8EBDD00564CF0 /* ViewController.swift */,
 				7DE9F94620D8EBDD00564CF0 /* Main.storyboard */,
+				7DE9F95420D8F06B00564CF0 /* ListTableViewController.swift */,
 				7DE9F94920D8EBDF00564CF0 /* Assets.xcassets */,
 				7DE9F94B20D8EBDF00564CF0 /* LaunchScreen.storyboard */,
 				7DE9F94E20D8EBDF00564CF0 /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE9F95520D8F06B00564CF0 /* ListTableViewController.swift in Sources */,
 				7DE9F94520D8EBDD00564CF0 /* ViewController.swift in Sources */,
 				7DE9F94320D8EBDD00564CF0 /* AppDelegate.swift in Sources */,
 			);
