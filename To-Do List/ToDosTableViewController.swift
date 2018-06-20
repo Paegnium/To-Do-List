@@ -15,6 +15,7 @@ class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
             todo.isComplete = !todo.isComplete
             toDos[indexPath.row] = todo
             tableView.reloadRows(at: [indexPath], with: .automatic)
+            ToDo.saveToFile(toDos: toDos)
         }
     }
     

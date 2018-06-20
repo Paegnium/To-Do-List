@@ -151,7 +151,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Touch to select date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YaQ-gd-QKz">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Touch to select date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaQ-gd-QKz">
                                                     <rect key="frame" x="186" y="22" width="157" height="21"/>
                                                     <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -343,21 +343,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="132.68365817091455"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="PGn-Or-bW9">
-            <objects>
-                <viewController id="Hso-gD-Xjx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cHz-du-VuY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="5I3-xd-8ht"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yzg-Pt-zqp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1490" y="143"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GQx-ZZ-4JO">
