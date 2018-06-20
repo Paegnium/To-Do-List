@@ -8,17 +8,21 @@
 
 import UIKit
 
-class ToDosTableViewController: UITableViewController {
+class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
+    func checkMarkTapped(sender: ToDoTableViewCell) {
+        if let indexPath = tableView.indexPath(for: sender) {
+            var todo = toDos[indexPath.row]
+            todo.isComplete = !todo.isComplete
+            toDos[indexPath.row] = todo
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
 
     var toDos : [ToDo] = []
 
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         if let loadedToDos = ToDo.loadFromFile() {
             toDos = loadedToDos
@@ -50,18 +54,19 @@ class ToDosTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "toDoCell", for: indexPath) as! ToDoTableViewCell
-        
+        cell.delegate = self
         let selectedToDo = toDos[indexPath.row]
         cell.titleLabel.text = selectedToDo.title
         cell.dateLabel.text = "\(selectedToDo.date)"
         cell.categoryLabel.text = selectedToDo.category
+        cell.checkmark.isSelected = selectedToDo.isComplete
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
     }
-    
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

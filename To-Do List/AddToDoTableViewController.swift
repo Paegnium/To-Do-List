@@ -162,12 +162,14 @@ class AddToDoTableViewController: UITableViewController {
             let date = datePickerView.date
             let category = categoryField.text ?? ""
             let description = descriptionField.text ?? ""
-            if (toDo == nil){ toDo = ToDo(title: title, date: date, category: category, description: description)
+            let isComplete = false
+            if (toDo == nil){ toDo = ToDo(title: title, date: date, category: category, description: description, isComplete: isComplete)
             } else {
                 toDo.title = title
                 toDo.description = description
                 toDo.date = date
                 toDo.category = category
+                toDo.isComplete = isComplete
             }
         }
     }

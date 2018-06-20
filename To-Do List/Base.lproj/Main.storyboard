@@ -47,13 +47,16 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw8-tQ-QxH" customClass="ChekBox" customModule="To_Do_List" customModuleProvider="target">
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw8-tQ-QxH">
                                             <rect key="frame" x="11" y="12" width="37" height="41"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button" image="unchecked-checkbox"/>
                                             <state key="disabled" image="unchecked-checkbox"/>
                                             <state key="selected" image="checked-checkbox"/>
                                             <state key="highlighted" image="unchecked-checkbox"/>
+                                            <connections>
+                                                <action selector="checkMarkTicked:" destination="ngE-PZ-cWE" eventType="touchUpInside" id="umF-FS-U1d"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>

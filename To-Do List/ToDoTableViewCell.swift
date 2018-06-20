@@ -8,14 +8,26 @@
 
 import UIKit
 
+@objc protocol ToDoCellDelegate: class {
+    func checkMarkTapped(sender: ToDoTableViewCell)
+}
+
 class ToDoTableViewCell: UITableViewCell {
     var toDo: ToDo!
+    var delegate: ToDoCellDelegate?
 
-    @IBOutlet weak var checkmark: ChekBox!
+    @IBOutlet weak var checkmark: UIButton!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
 
+    @IBAction func checkMarkTicked(_ sender: Any) {
+        delegate?.checkMarkTapped(sender: self)
+    }
+    func checkMarkTapped (sender: ToDoTableViewCell) {
+ 
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -29,31 +41,4 @@ class ToDoTableViewCell: UITableViewCell {
 
 }
 
-class ChekBox: UIButton {
-    // Images
-    let checkedImage = UIImage(named: "checked-checkbox")! as UIImage
-    let uncheckedImage = UIImage(named: "unchecked-checkbox")! as UIImage
-    
-    // Bool property
-    var isChecked: Bool = false {
-        didSet{
-            if isChecked == true {
-                self.setImage(checkedImage, for: UIControlState.normal)
-            } else {
-                self.setImage(uncheckedImage, for: UIControlState.normal)
-            }
-        }
-    }
-    
-    override func awakeFromNib() {
-        self.addTarget(self, action:#selector(buttonClicked(sender:)), for: UIControlEvents.touchUpInside)
-        self.isChecked = false
-    }
-    
-    @objc func buttonClicked(sender: UIButton) {
-        if sender == self {
-            isChecked = !isChecked
-        }
-    }
-}
 
