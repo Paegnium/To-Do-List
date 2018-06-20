@@ -54,11 +54,11 @@ class AddToDoTableViewController: UITableViewController {
         let largeCellHeight = CGFloat(200)
 
         switch(indexPath) {
-        case [1,0]:
+        case [1,0]: //Date Cell
             return isPickerHidden ? normalCellHeight :
             largeCellHeight
             
-        case [2,0]:
+        case [2,0]: //Description Cell
             return largeCellHeight
             
         default: return normalCellHeight
@@ -88,7 +88,7 @@ class AddToDoTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch (indexPath) {
-        case [1,0]:
+        case [1,0]: //Date Cell
             isPickerHidden = !isPickerHidden
             
             dateField.textColor =
@@ -96,6 +96,8 @@ class AddToDoTableViewController: UITableViewController {
             
             tableView.beginUpdates()
             tableView.endUpdates()
+            dateField.textColor =
+                isPickerHidden ? .clear : tableView.tintColor
             
         default: break
         }
@@ -160,14 +162,12 @@ class AddToDoTableViewController: UITableViewController {
             let date = datePickerView.date
             let category = categoryField.text ?? ""
             let description = descriptionField.text ?? ""
-            let finishChecker = false
-            if (toDo == nil){ toDo = ToDo(title: title, date: date, category: category, description: description, finishChecker: finishChecker)
+            if (toDo == nil){ toDo = ToDo(title: title, date: date, category: category, description: description)
             } else {
                 toDo.title = title
                 toDo.description = description
                 toDo.date = date
                 toDo.category = category
-                toDo.finishChecker = false
             }
         }
     }
