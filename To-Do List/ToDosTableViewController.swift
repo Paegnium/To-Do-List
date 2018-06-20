@@ -12,12 +12,20 @@ class ToDosTableViewController: UITableViewController {
 
     var toDos : [ToDo] = []
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
         self.navigationItem.leftBarButtonItem = self.editButtonItem
+        if let loadedToDos = ToDo.loadFromFile() {
+            toDos = loadedToDos
+            print("Loaded ToDos from file")
+        } else {
+            print("nothing")
+        }
         
     }
 
@@ -80,6 +88,7 @@ class ToDosTableViewController: UITableViewController {
         let toDo = toDos.remove(at: fromIndexPath.row)
         toDos.insert(toDo, at: to.row)
         tableView.reloadData()
+        ToDo.saveToFile(toDos: toDos)
     }
     
 
@@ -114,6 +123,7 @@ class ToDosTableViewController: UITableViewController {
             if tableView.indexPathForSelectedRow == nil {
             let source = segue.source as! AddToDoTableViewController
             toDos.insert(source.toDo, at: 0)
+                ToDo.saveToFile(toDos: toDos)
         }
             tableView.reloadData()
         }
