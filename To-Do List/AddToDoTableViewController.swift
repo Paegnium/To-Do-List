@@ -57,9 +57,7 @@ class AddToDoTableViewController: UITableViewController {
         case [1,0]: //Date Cell
             return isPickerHidden ? normalCellHeight :
             largeCellHeight
-            
-        case [2,0]: //Description Cell
-            return largeCellHeight
+
             
         default: return normalCellHeight
         }
