@@ -8,16 +8,26 @@
 
 import UIKit
 
+@objc protocol ToDoCellDelegate: class {
+    func checkMarkTapped(sender: ToDoTableViewCell)
+}
+
 class ToDoTableViewCell: UITableViewCell {
+    var toDo: ToDo!
+    var delegate: ToDoCellDelegate?
 
     @IBOutlet weak var checkmark: UIButton!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    
-    @IBAction func checkboxTicked(_ sender: Any) {
-        checkmark.isSelected = !checkmark.isSelected
+
+    @IBAction func checkMarkTicked(_ sender: Any) {
+        delegate?.checkMarkTapped(sender: self)
     }
+    func checkMarkTapped (sender: ToDoTableViewCell) {
+ 
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,3 +40,5 @@ class ToDoTableViewCell: UITableViewCell {
     }
 
 }
+
+

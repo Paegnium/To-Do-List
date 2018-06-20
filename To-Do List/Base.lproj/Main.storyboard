@@ -51,9 +51,11 @@
                                             <rect key="frame" x="11" y="12" width="37" height="41"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button" image="unchecked-checkbox"/>
+                                            <state key="disabled" image="unchecked-checkbox"/>
                                             <state key="selected" image="checked-checkbox"/>
+                                            <state key="highlighted" image="unchecked-checkbox"/>
                                             <connections>
-                                                <action selector="checkboxTicked:" destination="ngE-PZ-cWE" eventType="touchUpInside" id="Qo5-ZN-ANZ"/>
+                                                <action selector="checkMarkTicked:" destination="ngE-PZ-cWE" eventType="touchUpInside" id="umF-FS-U1d"/>
                                             </connections>
                                         </button>
                                     </subviews>

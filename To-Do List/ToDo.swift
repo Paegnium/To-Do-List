@@ -15,19 +15,19 @@ class ToDo : Codable {
     var date: Date
     var category: String
     var description: String
-    var finishChecker: Bool
+    var isComplete: Bool
     
-    init(title: String, date: Date, category: String, description: String, finishChecker: Bool) {
+    init(title: String, date: Date, category: String, description: String, isComplete: Bool) {
         self.title = title
         self.date = date
         self.category = category
         self.description = description
-        self.finishChecker = finishChecker
+        self.isComplete = isComplete
     }
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
-        formatter.timeStyle = .short
+        formatter.timeStyle = .none
         return formatter
     }()
     static func getArchiveURL() -> URL {
@@ -49,3 +49,4 @@ class ToDo : Codable {
         return decodedToDos
     }
 }
+
