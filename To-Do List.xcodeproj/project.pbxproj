@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		650B18B620D9357B00741DD9 /* AddToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B18B520D9357B00741DD9 /* AddToDoTableViewController.swift */; };
+		65883DF120DA0ED000742DF5 /* pencilCASE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65883DF020DA0ECE00742DF5 /* pencilCASE.ttf */; };
 		65DC554F20D8F07B005A6DD4 /* ToDosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC554E20D8F07B005A6DD4 /* ToDosTableViewController.swift */; };
 		65DC555120D8F0A0005A6DD4 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC555020D8F0A0005A6DD4 /* ToDo.swift */; };
 		65DC555320D8F413005A6DD4 /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC555220D8F413005A6DD4 /* ToDoTableViewCell.swift */; };
+		65E5CDE520DA0CD800F37F5C /* PPETRIAL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E5CDE420DA0CD600F37F5C /* PPETRIAL.ttf */; };
+		65E5CDE720DA0D8B00F37F5C /* DJB Number 2 Pencil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65E5CDE620DA0D8900F37F5C /* DJB Number 2 Pencil.ttf */; };
 		7DE9F94320D8EBDD00564CF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9F94220D8EBDD00564CF0 /* AppDelegate.swift */; };
 		7DE9F94520D8EBDD00564CF0 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE9F94420D8EBDD00564CF0 /* DetailsViewController.swift */; };
 		7DE9F94820D8EBDD00564CF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE9F94620D8EBDD00564CF0 /* Main.storyboard */; };
@@ -20,9 +23,12 @@
 
 /* Begin PBXFileReference section */
 		650B18B520D9357B00741DD9 /* AddToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoTableViewController.swift; sourceTree = "<group>"; };
+		65883DF020DA0ECE00742DF5 /* pencilCASE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pencilCASE.ttf; path = ../../../Downloads/pencilCASE.ttf; sourceTree = "<group>"; };
 		65DC554E20D8F07B005A6DD4 /* ToDosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDosTableViewController.swift; sourceTree = "<group>"; };
 		65DC555020D8F0A0005A6DD4 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		65DC555220D8F413005A6DD4 /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		65E5CDE420DA0CD600F37F5C /* PPETRIAL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = PPETRIAL.ttf; path = ../../../Downloads/pencilpete_font/PPETRIAL.ttf; sourceTree = "<group>"; };
+		65E5CDE620DA0D8900F37F5C /* DJB Number 2 Pencil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DJB Number 2 Pencil.ttf"; path = "../../../Downloads/djb_number_2_pencil/DJB Number 2 Pencil.ttf"; sourceTree = "<group>"; };
 		7DE9F93F20D8EBDD00564CF0 /* To-Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To-Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE9F94220D8EBDD00564CF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7DE9F94420D8EBDD00564CF0 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +71,9 @@
 				7DE9F94220D8EBDD00564CF0 /* AppDelegate.swift */,
 				7DE9F94420D8EBDD00564CF0 /* DetailsViewController.swift */,
 				7DE9F94620D8EBDD00564CF0 /* Main.storyboard */,
+				65883DF020DA0ECE00742DF5 /* pencilCASE.ttf */,
+				65E5CDE620DA0D8900F37F5C /* DJB Number 2 Pencil.ttf */,
+				65E5CDE420DA0CD600F37F5C /* PPETRIAL.ttf */,
 				650B18B520D9357B00741DD9 /* AddToDoTableViewController.swift */,
 				65DC555220D8F413005A6DD4 /* ToDoTableViewCell.swift */,
 				65DC555020D8F0A0005A6DD4 /* ToDo.swift */,
@@ -135,8 +144,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7DE9F94D20D8EBDF00564CF0 /* LaunchScreen.storyboard in Resources */,
+				65883DF120DA0ED000742DF5 /* pencilCASE.ttf in Resources */,
+				65E5CDE520DA0CD800F37F5C /* PPETRIAL.ttf in Resources */,
 				7DE9F94A20D8EBDF00564CF0 /* Assets.xcassets in Resources */,
 				7DE9F94820D8EBDD00564CF0 /* Main.storyboard in Resources */,
+				65E5CDE720DA0D8B00F37F5C /* DJB Number 2 Pencil.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
