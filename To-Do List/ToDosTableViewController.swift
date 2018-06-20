@@ -36,6 +36,7 @@ class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        ToDo.saveToFile(toDos: toDos)
         // Dispose of any resources that can be recreated.
     }
 
@@ -81,6 +82,7 @@ class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
         if editingStyle == .delete {
             toDos.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .right)
+            ToDo.saveToFile(toDos: toDos)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
