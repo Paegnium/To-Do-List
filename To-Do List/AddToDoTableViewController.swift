@@ -89,13 +89,9 @@ class AddToDoTableViewController: UITableViewController {
         case [1,0]: //Date Cell
             isPickerHidden = !isPickerHidden
             
-            dateField.textColor =
-                isPickerHidden ? .black : tableView.tintColor
             
             tableView.beginUpdates()
             tableView.endUpdates()
-            dateField.textColor =
-                isPickerHidden ? .clear : tableView.tintColor
             
         default: break
         }
