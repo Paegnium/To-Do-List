@@ -8,7 +8,9 @@
 
 import Foundation
 
-class ToDo {
+
+
+class ToDo : Codable {
     var title: String
     var date: Date
     var category: String
@@ -28,4 +30,22 @@ class ToDo {
         formatter.timeStyle = .short
         return formatter
     }()
+    static func getArchiveURL() -> URL {
+        let plistName = "toDos"
+        let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        return documentsDirectory.appendingPathComponent(plistName).appendingPathExtension("plist")
+    }
+    static func saveToFile(toDos: [ToDo]) {
+        let archiveURL = getArchiveURL()
+        let propertyListEncoder = PropertyListEncoder()
+        let encodedToDos = try? propertyListEncoder.encode(toDos)
+        try? encodedToDos?.write(to: archiveURL, options: .noFileProtection)
+    }
+    static func loadFromFile() -> [ToDo]? {
+        let archiveURL = getArchiveURL()
+        let propertyListDecoder = PropertyListDecoder()
+        guard let retrievedToDosData = try? Data(contentsOf: archiveURL) else {return nil}
+        guard let decodedToDos = try? propertyListDecoder.decode(Array<ToDo>.self, from: retrievedToDosData) else {return nil}
+        return decodedToDos
+    }
 }
