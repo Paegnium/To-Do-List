@@ -41,10 +41,10 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2012-03-11 09:26:37.837" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="9IX-pa-Bw9">
-                                            <rect key="frame" x="68" y="38" width="120" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dd-MM-yyyy HH:mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IX-pa-Bw9">
+                                            <rect key="frame" x="68" y="38" width="126" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -115,7 +115,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PS6-3r-VZm">
-                                                    <rect key="frame" x="1" y="0.0" width="373" height="44"/>
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="pYu-1f-IS1"/>
                                                     </constraints>
@@ -128,9 +128,9 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PS6-3r-VZm" firstAttribute="leading" secondItem="5x7-ip-MYJ" secondAttribute="leading" constant="1" id="Jmy-ws-mZe"/>
+                                                <constraint firstItem="PS6-3r-VZm" firstAttribute="leading" secondItem="5x7-ip-MYJ" secondAttribute="leading" constant="16" id="Jmy-ws-mZe"/>
                                                 <constraint firstItem="PS6-3r-VZm" firstAttribute="centerY" secondItem="5x7-ip-MYJ" secondAttribute="centerY" id="R0H-eX-FWT"/>
-                                                <constraint firstAttribute="trailing" secondItem="PS6-3r-VZm" secondAttribute="trailing" constant="1" id="dDP-86-C5s"/>
+                                                <constraint firstAttribute="trailing" secondItem="PS6-3r-VZm" secondAttribute="trailing" constant="16" id="dDP-86-C5s"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -193,7 +193,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jGp-9w-vcg">
-                                                    <rect key="frame" x="1" y="0.0" width="373" height="44"/>
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="foT-gC-qg1"/>
                                                     </constraints>
@@ -207,8 +207,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="jGp-9w-vcg" firstAttribute="centerY" secondItem="rx4-gz-vNa" secondAttribute="centerY" id="H4o-SY-scT"/>
-                                                <constraint firstItem="jGp-9w-vcg" firstAttribute="leading" secondItem="rx4-gz-vNa" secondAttribute="leading" constant="1" id="U2O-oY-ouw"/>
-                                                <constraint firstAttribute="trailing" secondItem="jGp-9w-vcg" secondAttribute="trailing" constant="1" id="Xkj-9y-hvo"/>
+                                                <constraint firstItem="jGp-9w-vcg" firstAttribute="leading" secondItem="rx4-gz-vNa" secondAttribute="leading" constant="16" id="U2O-oY-ouw"/>
+                                                <constraint firstAttribute="trailing" secondItem="jGp-9w-vcg" secondAttribute="trailing" constant="16" id="Xkj-9y-hvo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -224,7 +224,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-bw-yat">
-                                                    <rect key="frame" x="1" y="-2" width="373" height="44.5"/>
+                                                    <rect key="frame" x="16" y="-2" width="343" height="44.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="l0Q-NK-sQI"/>
                                                     </constraints>
@@ -237,9 +237,9 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="0Rl-bw-yat" firstAttribute="leading" secondItem="FJj-6A-44R" secondAttribute="leading" constant="1" id="0nR-p0-zam"/>
+                                                <constraint firstItem="0Rl-bw-yat" firstAttribute="leading" secondItem="FJj-6A-44R" secondAttribute="leading" constant="16" id="0nR-p0-zam"/>
                                                 <constraint firstItem="0Rl-bw-yat" firstAttribute="centerY" secondItem="FJj-6A-44R" secondAttribute="centerY" id="cco-IX-Jc9"/>
-                                                <constraint firstAttribute="trailing" secondItem="0Rl-bw-yat" secondAttribute="trailing" constant="1" id="zzm-pY-LYA"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Rl-bw-yat" secondAttribute="trailing" constant="16" id="zzm-pY-LYA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -294,23 +294,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2012-03-11 09:26:37.837" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BLz-pH-tlT">
-                                <rect key="frame" x="16" y="164" width="120" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="5b0-h2-d7V"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="12"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd-MM-yyyy HH:mm " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLz-pH-tlT">
+                                <rect key="frame" x="16" y="164" width="113" height="20"/>
+                                <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mmk-gx-GNj">
-                                <rect key="frame" x="245" y="165" width="114" height="18.5"/>
+                                <rect key="frame" x="308.5" y="165" width="50.5" height="18.5"/>
                                 <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95w-Zc-Nhg">
-                                <rect key="frame" x="16" y="194" width="343" height="342"/>
+                                <rect key="frame" x="16" y="193.5" width="343" height="342"/>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
                                 <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -322,14 +319,14 @@
                             <constraint firstItem="KfA-WO-Gs0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4kZ-tw-bNE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmk-gx-GNj" secondAttribute="trailing" constant="16" id="5fD-XY-z2y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KfA-WO-Gs0" secondAttribute="trailing" constant="108" id="L9u-5i-hWB"/>
-                            <constraint firstItem="Mmk-gx-GNj" firstAttribute="leading" secondItem="BLz-pH-tlT" secondAttribute="trailing" constant="109" id="WHH-8v-tjf"/>
-                            <constraint firstItem="BLz-pH-tlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WNI-Wx-g3I"/>
+                            <constraint firstItem="95w-Zc-Nhg" firstAttribute="top" secondItem="BLz-pH-tlT" secondAttribute="bottom" constant="9.5" id="LMA-1S-0hN"/>
                             <constraint firstItem="KfA-WO-Gs0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="YNJ-Jp-1oR"/>
+                            <constraint firstItem="Mmk-gx-GNj" firstAttribute="leading" secondItem="BLz-pH-tlT" secondAttribute="trailing" constant="179.5" id="c2d-g5-mc5"/>
+                            <constraint firstItem="BLz-pH-tlT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="d3n-Cc-uiN"/>
                             <constraint firstItem="Mmk-gx-GNj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="101" id="fIb-hg-ZpY"/>
-                            <constraint firstItem="95w-Zc-Nhg" firstAttribute="top" secondItem="BLz-pH-tlT" secondAttribute="bottom" constant="12.5" id="jQ8-Oa-7Gp"/>
+                            <constraint firstItem="BLz-pH-tlT" firstAttribute="top" secondItem="KfA-WO-Gs0" secondAttribute="bottom" constant="20" id="pY3-tr-UUC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="95w-Zc-Nhg" secondAttribute="trailing" constant="16" id="rxY-dQ-7n8"/>
                             <constraint firstItem="95w-Zc-Nhg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="wP7-Hr-Bje"/>
-                            <constraint firstItem="BLz-pH-tlT" firstAttribute="top" secondItem="KfA-WO-Gs0" secondAttribute="bottom" constant="19.5" id="zu4-Rq-EOH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

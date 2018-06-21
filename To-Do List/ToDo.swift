@@ -12,12 +12,12 @@ import Foundation
 
 class ToDo : Codable {
     var title: String
-    var date: Date
+    var date: String
     var category: String
     var description: String
     var isComplete: Bool
     
-    init(title: String, date: Date, category: String, description: String, isComplete: Bool) {
+    init(title: String, date: String, category: String, description: String, isComplete: Bool) {
         self.title = title
         self.date = date
         self.category = category

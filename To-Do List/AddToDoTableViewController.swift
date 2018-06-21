@@ -87,6 +87,7 @@ class AddToDoTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         switch (indexPath) {
         case [1,0]: //Date Cell
             isPickerHidden = !isPickerHidden
@@ -154,7 +155,7 @@ class AddToDoTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "saveUnwind"{
             let title = titleField.text ?? ""
-            let date = datePickerView.date
+            let date = dateField.text ?? ""
             let category = categoryField.text ?? ""
             let description = descriptionField.text ?? ""
             let isComplete = false
