@@ -34,30 +34,38 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dp5-VQ-88w">
-                                            <rect key="frame" x="68" y="3" width="239" height="37"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Dp5-VQ-88w">
+                                            <rect key="frame" x="68" y="3" width="239" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="MV3-5U-46Q"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dd-MM-yyyy HH:mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IX-pa-Bw9">
-                                            <rect key="frame" x="68" y="38" width="126" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd-MM-yyyy HH:mm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IX-pa-Bw9">
+                                            <rect key="frame" x="68" y="38" width="121" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="121" id="FG7-IH-qw0"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIm-QD-l4J">
-                                            <rect key="frame" x="245" y="37" width="130" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIm-QD-l4J">
+                                            <rect key="frame" x="245" y="37" width="130" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="130" id="MKQ-q2-hLo"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw8-tQ-QxH">
-                                            <rect key="frame" x="11" y="12" width="37" height="41"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw8-tQ-QxH">
+                                            <rect key="frame" x="11" y="12" width="35" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="35" id="w39-Vk-prJ"/>
+                                            </constraints>
                                             <state key="normal" title="Button" image="unchecked-checkbox"/>
                                             <state key="disabled" image="unchecked-checkbox"/>
                                             <state key="selected" image="checked-checkbox"/>
@@ -67,6 +75,20 @@
                                             </connections>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qIm-QD-l4J" firstAttribute="leading" secondItem="9IX-pa-Bw9" secondAttribute="trailing" constant="56" id="100-Xh-g0a"/>
+                                        <constraint firstItem="jw8-tQ-QxH" firstAttribute="leading" secondItem="zpX-ne-P9o" secondAttribute="leading" constant="11" id="Fk2-Hg-Jxi"/>
+                                        <constraint firstItem="9IX-pa-Bw9" firstAttribute="bottom" secondItem="zpX-ne-P9o" secondAttribute="bottomMargin" id="J1b-Gg-7z7"/>
+                                        <constraint firstItem="Dp5-VQ-88w" firstAttribute="top" secondItem="zpX-ne-P9o" secondAttribute="top" constant="3" id="Wgm-MH-C2d"/>
+                                        <constraint firstItem="9IX-pa-Bw9" firstAttribute="leading" secondItem="Dp5-VQ-88w" secondAttribute="leading" id="aGF-wQ-Vjc"/>
+                                        <constraint firstItem="qIm-QD-l4J" firstAttribute="top" secondItem="Dp5-VQ-88w" secondAttribute="bottom" id="fPD-2C-vBh"/>
+                                        <constraint firstAttribute="trailing" secondItem="Dp5-VQ-88w" secondAttribute="trailing" constant="68" id="ghw-lH-Zqy"/>
+                                        <constraint firstItem="9IX-pa-Bw9" firstAttribute="top" secondItem="Dp5-VQ-88w" secondAttribute="bottom" constant="1" id="rCF-Ss-rkx"/>
+                                        <constraint firstItem="jw8-tQ-QxH" firstAttribute="top" secondItem="zpX-ne-P9o" secondAttribute="top" constant="12" id="u4T-p4-Aa9"/>
+                                        <constraint firstAttribute="bottom" secondItem="jw8-tQ-QxH" secondAttribute="bottom" constant="12" id="x1B-fL-lYo"/>
+                                        <constraint firstAttribute="bottom" secondItem="qIm-QD-l4J" secondAttribute="bottom" id="yFq-G3-JBW"/>
+                                        <constraint firstItem="Dp5-VQ-88w" firstAttribute="leading" secondItem="jw8-tQ-QxH" secondAttribute="trailing" constant="22" id="yiJ-u2-TZs"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="categoryLabel" destination="qIm-QD-l4J" id="lnQ-J4-wHY"/>
@@ -146,19 +168,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-tg-edQ">
-                                                    <rect key="frame" x="38" y="22" width="33" height="24.5"/>
+                                                    <rect key="frame" x="38" y="22" width="33" height="25"/>
                                                     <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Touch to select date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YaQ-gd-QKz">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Touch to select date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YaQ-gd-QKz">
                                                     <rect key="frame" x="186" y="22" width="157" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="cOE-Mq-0aT"/>
+                                                        <constraint firstAttribute="height" constant="21" id="rKh-k2-80K"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="DJBNumber2Pencil" family="DJB Number 2 Pencil" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="OMs-Nt-ZlJ">
-                                                    <rect key="frame" x="0.0" y="54.5" width="375" height="165"/>
+                                                    <rect key="frame" x="0.0" y="55" width="375" height="165"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="165" id="6He-tn-rS7"/>
                                                     </constraints>
@@ -172,11 +198,13 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="JXw-tg-edQ" firstAttribute="top" secondItem="JlA-in-Sn2" secondAttribute="topMargin" constant="11" id="43U-YV-RIp"/>
+                                                <constraint firstItem="YaQ-gd-QKz" firstAttribute="top" secondItem="JXw-tg-edQ" secondAttribute="top" id="Ca5-mV-4Un"/>
                                                 <constraint firstItem="OMs-Nt-ZlJ" firstAttribute="top" secondItem="JXw-tg-edQ" secondAttribute="bottom" constant="8" id="HSo-Tf-2Wz"/>
-                                                <constraint firstItem="YaQ-gd-QKz" firstAttribute="top" secondItem="JlA-in-Sn2" secondAttribute="topMargin" constant="11" id="b1E-cs-jxw"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="YaQ-gd-QKz" secondAttribute="trailing" constant="16" id="dr2-Uw-gpL"/>
+                                                <constraint firstAttribute="trailing" secondItem="JXw-tg-edQ" secondAttribute="trailingMargin" constant="312" id="YP1-dQ-1IN"/>
+                                                <constraint firstItem="YaQ-gd-QKz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JlA-in-Sn2" secondAttribute="leadingMargin" id="dFT-IK-pQ1"/>
                                                 <constraint firstAttribute="trailing" secondItem="OMs-Nt-ZlJ" secondAttribute="trailing" id="hj3-LT-LhF"/>
-                                                <constraint firstItem="JXw-tg-edQ" firstAttribute="leading" secondItem="JlA-in-Sn2" secondAttribute="leadingMargin" constant="22" id="sEB-re-UPc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YaQ-gd-QKz" secondAttribute="trailing" constant="16" id="pDs-Fm-aUt"/>
+                                                <constraint firstItem="JXw-tg-edQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JlA-in-Sn2" secondAttribute="leadingMargin" id="sEB-re-UPc"/>
                                                 <constraint firstItem="OMs-Nt-ZlJ" firstAttribute="leading" secondItem="JlA-in-Sn2" secondAttribute="leading" id="u3F-e4-o0I"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -390,6 +418,6 @@
         <image name="unchecked-checkbox" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Jil-2l-wYs"/>
+        <segue reference="2o0-R6-CVh"/>
     </inferredMetricsTieBreakers>
 </document>
