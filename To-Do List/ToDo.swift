@@ -28,6 +28,7 @@ class ToDo : Codable {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
         formatter.timeStyle = .short
+        formatter.dateFormat = "dd-MM-yyyy HH:mm"
         return formatter
     }()
     static func getArchiveURL() -> URL {

@@ -75,6 +75,7 @@ class AddToDoTableViewController: UITableViewController {
             let title = titleField.text, !title.isEmpty,
             let description = descriptionField.text, !description.isEmpty,
             let category = categoryField.text, !category.isEmpty
+            
             else {
                 saveButton.isEnabled = false
                 return
@@ -89,7 +90,7 @@ class AddToDoTableViewController: UITableViewController {
         switch (indexPath) {
         case [1,0]: //Date Cell
             isPickerHidden = !isPickerHidden
-            
+            tableView.deselectRow(at: indexPath, animated: true)
             tableView.beginUpdates()
             tableView.endUpdates()
             
@@ -175,10 +176,11 @@ class AddToDoTableViewController: UITableViewController {
     @IBAction func returnPressedCat(_ sender: UITextField) {
         sender.resignFirstResponder()
     }
-    
+
     @IBAction func returnPressedDesc(_ sender: UITextField) {
         sender.resignFirstResponder()
     }
+    
     @IBAction func datePickerChanged(_ sender: Any) {
         updateDateLabel(date: datePickerView.date)
     }

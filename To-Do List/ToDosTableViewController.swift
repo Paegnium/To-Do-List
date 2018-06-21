@@ -27,11 +27,7 @@ class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         if let loadedToDos = ToDo.loadFromFile() {
             toDos = loadedToDos
-            print("Loaded ToDos from file")
-        } else {
-            print("nothing")
         }
-        
     }
 
 
@@ -64,6 +60,9 @@ class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
         cell.checkmark.isSelected = selectedToDo.isComplete
         return cell
     }
+    
+ 
+
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70

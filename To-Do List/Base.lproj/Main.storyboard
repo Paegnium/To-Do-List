@@ -115,7 +115,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PS6-3r-VZm">
-                                                    <rect key="frame" x="16" y="0.0" width="343" height="44"/>
+                                                    <rect key="frame" x="1" y="0.0" width="373" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="pYu-1f-IS1"/>
                                                     </constraints>
@@ -128,9 +128,9 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="PS6-3r-VZm" firstAttribute="leading" secondItem="5x7-ip-MYJ" secondAttribute="leading" constant="16" id="Jmy-ws-mZe"/>
+                                                <constraint firstItem="PS6-3r-VZm" firstAttribute="leading" secondItem="5x7-ip-MYJ" secondAttribute="leading" constant="1" id="Jmy-ws-mZe"/>
                                                 <constraint firstItem="PS6-3r-VZm" firstAttribute="centerY" secondItem="5x7-ip-MYJ" secondAttribute="centerY" id="R0H-eX-FWT"/>
-                                                <constraint firstAttribute="trailing" secondItem="PS6-3r-VZm" secondAttribute="trailing" constant="16" id="dDP-86-C5s"/>
+                                                <constraint firstAttribute="trailing" secondItem="PS6-3r-VZm" secondAttribute="trailing" constant="1" id="dDP-86-C5s"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -192,17 +192,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dTI-mq-yIv">
-                                                    <rect key="frame" x="16" y="0.0" width="343" height="45"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jGp-9w-vcg">
+                                                    <rect key="frame" x="1" y="0.0" width="373" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="foT-gC-qg1"/>
+                                                    </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="17"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                     <connections>
-                                                        <action selector="returnPressedDesc:" destination="Atx-GJ-V09" eventType="primaryActionTriggered" id="sRD-w3-rpA"/>
+                                                        <action selector="returnPressedDesc:" destination="Atx-GJ-V09" eventType="primaryActionTriggered" id="U3d-Km-Saf"/>
                                                     </connections>
                                                 </textField>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jGp-9w-vcg" firstAttribute="centerY" secondItem="rx4-gz-vNa" secondAttribute="centerY" id="H4o-SY-scT"/>
+                                                <constraint firstItem="jGp-9w-vcg" firstAttribute="leading" secondItem="rx4-gz-vNa" secondAttribute="leading" constant="1" id="U2O-oY-ouw"/>
+                                                <constraint firstAttribute="trailing" secondItem="jGp-9w-vcg" secondAttribute="trailing" constant="1" id="Xkj-9y-hvo"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -217,7 +224,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Rl-bw-yat">
-                                                    <rect key="frame" x="16" y="-2" width="343" height="44.5"/>
+                                                    <rect key="frame" x="1" y="-2" width="373" height="44.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="l0Q-NK-sQI"/>
                                                     </constraints>
@@ -230,9 +237,9 @@
                                                 </textField>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="0Rl-bw-yat" firstAttribute="leading" secondItem="FJj-6A-44R" secondAttribute="leading" constant="16" id="0nR-p0-zam"/>
+                                                <constraint firstItem="0Rl-bw-yat" firstAttribute="leading" secondItem="FJj-6A-44R" secondAttribute="leading" constant="1" id="0nR-p0-zam"/>
                                                 <constraint firstItem="0Rl-bw-yat" firstAttribute="centerY" secondItem="FJj-6A-44R" secondAttribute="centerY" id="cco-IX-Jc9"/>
-                                                <constraint firstAttribute="trailing" secondItem="0Rl-bw-yat" secondAttribute="trailing" constant="16" id="zzm-pY-LYA"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Rl-bw-yat" secondAttribute="trailing" constant="1" id="zzm-pY-LYA"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -260,7 +267,7 @@
                         <outlet property="categoryField" destination="0Rl-bw-yat" id="DKT-MG-hbG"/>
                         <outlet property="dateField" destination="YaQ-gd-QKz" id="LvF-lW-TzT"/>
                         <outlet property="datePickerView" destination="OMs-Nt-ZlJ" id="W75-9n-aep"/>
-                        <outlet property="descriptionField" destination="dTI-mq-yIv" id="ldr-eb-r4t"/>
+                        <outlet property="descriptionField" destination="jGp-9w-vcg" id="7It-2h-Ug6"/>
                         <outlet property="saveButton" destination="ZtS-I5-PhS" id="Cnu-3L-La0"/>
                         <outlet property="titleField" destination="PS6-3r-VZm" id="PJT-gM-K2s"/>
                     </connections>
