@@ -120,7 +120,7 @@
                                                         <constraint firstAttribute="height" constant="44" id="pYu-1f-IS1"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <connections>
                                                         <action selector="returnPressed:" destination="Atx-GJ-V09" eventType="primaryActionTriggered" id="oea-NP-c4l"/>
@@ -198,7 +198,7 @@
                                                         <constraint firstAttribute="height" constant="44" id="foT-gC-qg1"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
                                                         <action selector="returnPressedDesc:" destination="Atx-GJ-V09" eventType="primaryActionTriggered" id="U3d-Km-Saf"/>
@@ -229,7 +229,7 @@
                                                         <constraint firstAttribute="height" constant="44" id="l0Q-NK-sQI"/>
                                                     </constraints>
                                                     <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <connections>
                                                         <action selector="returnPressedCat:" destination="Atx-GJ-V09" eventType="primaryActionTriggered" id="p7V-MT-dQl"/>
