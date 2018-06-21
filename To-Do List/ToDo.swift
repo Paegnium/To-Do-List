@@ -27,7 +27,7 @@ class ToDo : Codable {
     static let dateFormatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .short
-        formatter.timeStyle = .none
+        formatter.timeStyle = .short
         return formatter
     }()
     static func getArchiveURL() -> URL {

@@ -62,6 +62,7 @@ class AddToDoTableViewController: UITableViewController {
         default: return normalCellHeight
         }
     }
+    
     @objc func editingChanged(_ textField: UITextField) {
         if textField.text?.characters.count == 1 {
             if textField.text?.characters.first == " " {
@@ -88,7 +89,6 @@ class AddToDoTableViewController: UITableViewController {
         switch (indexPath) {
         case [1,0]: //Date Cell
             isPickerHidden = !isPickerHidden
-            
             
             tableView.beginUpdates()
             tableView.endUpdates()
