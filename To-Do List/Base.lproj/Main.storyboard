@@ -18,7 +18,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--My To-Do List-->
+        <!--To Dos Table View Controller-->
         <scene sceneID="iiC-ll-g6d">
             <objects>
                 <tableViewController id="mZ7-Fy-94e" customClass="ToDosTableViewController" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,7 +103,18 @@
                             <outlet property="delegate" destination="mZ7-Fy-94e" id="gpH-jM-chY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My To-Do List" id="goG-sU-GnS">
+                    <navigationItem key="navigationItem" id="goG-sU-GnS">
+                        <nil key="title"/>
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Table View" textAlignment="center" minimumFontSize="17" id="LmN-cv-Uwc">
+                            <rect key="frame" x="87" y="13" width="201" height="18"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="titleDidHitEnter:" destination="mZ7-Fy-94e" eventType="primaryActionTriggered" id="ERs-UZ-lCD"/>
+                            </connections>
+                        </textField>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ISk-G2-eUY">
                             <connections>
                                 <segue destination="xzq-CV-GUn" kind="show" id="Jil-2l-wYs"/>
@@ -111,6 +122,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="titleTextField" destination="LmN-cv-Uwc" id="WmA-3s-GtW"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showDetails" id="HbS-R6-Pcx"/>
                     </connections>
                 </tableViewController>

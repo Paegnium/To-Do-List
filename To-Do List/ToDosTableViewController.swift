@@ -6,7 +6,26 @@
 //  Copyright © 2018 Edgefield. All rights reserved.
 //
 
+extension UITextField {
+    internal func resizeText() {
+        if let text = self.text{
+            self.font = UIFont.systemFont(ofSize: 14)
+            let textString = text as NSString
+            var widthOfText = textString.size(withAttributes: [NSAttributedStringKey.font : self.font!]).width
+            var widthOfFrame = self.frame.size.width
+            // decrease font size until it fits
+            while widthOfFrame - 5 < widthOfText {
+                let fontSize = self.font!.pointSize
+                self.font = self.font?.withSize(fontSize - 0.5)
+                widthOfText = textString.size(withAttributes: [NSAttributedStringKey.font : self.font!]).width
+                widthOfFrame = self.frame.size.width
+            }
+        }
+    }
+}
 import UIKit
+let defaults = UserDefaults.standard
+
 
 class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
     func checkMarkTapped(sender: ToDoTableViewCell) {
@@ -19,15 +38,19 @@ class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
         }
     }
     
-
+    @IBOutlet weak var titleTextField: UITextField!
+    
     var toDos : [ToDo] = []
-
+ 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.leftBarButtonItem = self.editButtonItem
         if let loadedToDos = ToDo.loadFromFile() {
             toDos = loadedToDos
         }
+        var retrievedTitle = defaults.object(forKey: "tviewTitle") as? String ?? ""
+        titleTextField.text = retrievedTitle
     }
 
 
@@ -66,6 +89,14 @@ class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
+    }
+    
+    @IBAction func titleDidHitEnter(_ sender: UITextField) {
+        defaults.set(titleTextField.text, forKey: "tviewTitle")
+        var myText = titleTextField.text
+        
+        UserDefaults.standard.set(myText, forKey: "tviewTitle")
+        sender.resignFirstResponder()
     }
 
     /*
