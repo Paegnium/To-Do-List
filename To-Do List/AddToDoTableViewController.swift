@@ -23,7 +23,7 @@ class AddToDoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if toDo != nil {
-            datePickerView.date = Date().addingTimeInterval(24*60*60)
+            datePickerView.date = Date()
             updateDateLabel(date: datePickerView.date)
             titleField.text = toDo.title
             descriptionField.text = toDo.description
