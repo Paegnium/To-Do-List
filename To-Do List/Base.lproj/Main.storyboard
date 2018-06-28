@@ -18,7 +18,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--To Dos Table View Controller-->
+        <!--My To-Do List-->
         <scene sceneID="iiC-ll-g6d">
             <objects>
                 <tableViewController id="mZ7-Fy-94e" customClass="ToDosTableViewController" customModule="To_Do_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,7 +103,7 @@
                             <outlet property="delegate" destination="mZ7-Fy-94e" id="gpH-jM-chY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="goG-sU-GnS">
+                    <navigationItem key="navigationItem" title="My To-Do List" id="goG-sU-GnS">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ISk-G2-eUY">
                             <connections>
                                 <segue destination="xzq-CV-GUn" kind="show" id="Jil-2l-wYs"/>
@@ -418,6 +418,6 @@
         <image name="unchecked-checkbox" width="35" height="35"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="2o0-R6-CVh"/>
+        <segue reference="Jil-2l-wYs"/>
     </inferredMetricsTieBreakers>
 </document>
