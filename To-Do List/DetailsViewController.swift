@@ -12,12 +12,14 @@ class DetailsViewController: UIViewController {
     
     var toDo: ToDo!
 
+    @IBOutlet var detailsNavigationitem: UINavigationItem!
     @IBOutlet weak var detailsTitle: UILabel!
     @IBOutlet weak var detailsDate: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        detailsNavigationitem.title = toDo.title
         descriptionLabel.numberOfLines = 0
         detailsTitle.text = toDo.title
         detailsDate.text = "\(toDo.date)"

@@ -6,23 +6,7 @@
 //  Copyright © 2018 Edgefield. All rights reserved.
 //
 
-extension UITextField {
-    internal func resizeText() {
-        if let text = self.text{
-            self.font = UIFont.systemFont(ofSize: 14)
-            let textString = text as NSString
-            var widthOfText = textString.size(withAttributes: [NSAttributedStringKey.font : self.font!]).width
-            var widthOfFrame = self.frame.size.width
-            // decrease font size until it fits
-            while widthOfFrame - 5 < widthOfText {
-                let fontSize = self.font!.pointSize
-                self.font = self.font?.withSize(fontSize - 0.5)
-                widthOfText = textString.size(withAttributes: [NSAttributedStringKey.font : self.font!]).width
-                widthOfFrame = self.frame.size.width
-            }
-        }
-    }
-}
+
 import UIKit
 let defaults = UserDefaults.standard
 
@@ -49,7 +33,7 @@ class ToDosTableViewController: UITableViewController, ToDoCellDelegate {
         if let loadedToDos = ToDo.loadFromFile() {
             toDos = loadedToDos
         }
-        var retrievedTitle = defaults.object(forKey: "tviewTitle") as? String ?? ""
+        var retrievedTitle = defaults.object(forKey: "tviewTitle") as? String ?? "My To-Do List"
         titleTextField.text = retrievedTitle
     }
 

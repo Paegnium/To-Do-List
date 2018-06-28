@@ -105,12 +105,12 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="goG-sU-GnS">
                         <nil key="title"/>
-                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My Table View" textAlignment="center" minimumFontSize="17" id="LmN-cv-Uwc">
+                        <textField key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="My To-Do List" textAlignment="center" minimumFontSize="17" id="LmN-cv-Uwc">
                             <rect key="frame" x="87" y="13" width="201" height="18"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
                             <connections>
                                 <action selector="titleDidHitEnter:" destination="mZ7-Fy-94e" eventType="primaryActionTriggered" id="ERs-UZ-lCD"/>
                             </connections>
@@ -239,7 +239,7 @@
                                                     </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" name="pencilCASE" family="pencilCASE" pointSize="20"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     <connections>
                                                         <action selector="returnPressedDesc:" destination="Atx-GJ-V09" eventType="primaryActionTriggered" id="U3d-Km-Saf"/>
                                                     </connections>
@@ -381,6 +381,7 @@
                         <outlet property="categoryLabel" destination="Mmk-gx-GNj" id="QV0-Du-aEY"/>
                         <outlet property="descriptionLabel" destination="95w-Zc-Nhg" id="7C6-2V-Sum"/>
                         <outlet property="detailsDate" destination="BLz-pH-tlT" id="TLe-Hy-dEf"/>
+                        <outlet property="detailsNavigationitem" destination="rIP-de-dHZ" id="EOh-fP-7Dk"/>
                         <outlet property="detailsTitle" destination="KfA-WO-Gs0" id="IYa-IT-CoR"/>
                     </connections>
                 </viewController>
